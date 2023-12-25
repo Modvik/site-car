@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Пункты выдачи</title>
+    <meta charset="UTF-8">
+    
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="container">
+        <div class="header__top top-header">
+            <div class="top-header__container">
+                <div class="top-header__info">
+                    <a href="/" class="top-header__logo logo"><picture><source srcset="img/logo.webp"type="image/webp"><img src="img/logo.png" alt="Logo"></picture></a>
+                    <div class="top-header__links" data-da=".menu__body, 991.98,4">
+                        <div class="top-header__block">
+                            <small>Поддержка</small>
+                            <a href="tel:81234567890">8 (123) 456-78-90</a>
+                            <small>Звонок по России бесплатный</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom bottom-header">
+            <div class="bottom-header__container">
+                <div class="bottom-header__menu menu">
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <!-- <li class="menu__item ">
+                                <a class="menu__link" href="/">Каталог автомобилей</a></li>
+                            <li class="menu__item ">
+                                <a class="menu__link" href="/info-points">Пункты выдачи</a></li>
+                            <li class="menu__item ">
+                                <a class="menu__link" href="/about">О нас</a></li> -->
+                            <li class="menu__item ">
+                                <a class="menu__link" href="/">Каталог автомобилей</a></li>
+                            <li class="menu__item ">
+                                <a class="menu__link" href="/info-points.html">Пункты выдачи</a></li>
+                            <li class="menu__item ">
+                                <a class="menu__link" href="/about.html">О нас</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <main role="main">
+            <div class="container pb-5 pt-3">
+                <h1 class="mb-5 mt-4">Пункты выдачи</h1>
+
+                <div class="d-lg-flex">
+                    <div class="col-12 col-lg-6 me-4">
+                        <!-- Filter -->
+                        <div>
+                            <form id="filter-form-info">
+                                <h3 class="mb-4">Фильтры</h3>
+                                <div class="mb-3 field-pointsearch-cityid">
+                                    <label class="form-label" for="pointsearch-cityid">Город получения заказа</label>
+                                    <select id="pointsearch-cityid" class="form-select form-select-sm mt-2"name="cityId">
+                                        <option value="">Любой город</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="col-10">
+                                        <div class="mb-3 field-pointsearch-name">
+                                            <input type="text" id="pointsearch-name"
+                                                class="form-control form-control-sm" name="name" value=""placeholder="Поиск пункта">
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a class="btn btn-sm  btn-outline-secondary close" href="/info-points">
+                                            <img src="img/close.svg" alt="loupe">
+                                        </a> 
+                                        <button type="submit" class="btn btn-sm btn-primary loupe">
+                                            <img src="img/loupe.svg" alt="loupe">
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div id="carts-city">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="map" id="map" style=" height: 100vh">
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aefb19198c726c73d05d61093d94e7e21353e0b39d73c37a621bdc17a9cd14d7d&amp;width=741&amp;height=504&amp;lang=ru_RU&amp;scroll=true"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer border-top">
+    <div class="container mt-3">
+        <div class="row justify-content-between">
+            <div class="d-lg-none mb-4 logo">
+                <a href="/"> <picture><source srcset="img/logo.webp"type="image/webp"><img src="img/logo.png" alt="Logo"></picture></a>
+            </div>
+            <div class="col-12 col-lg-3">
+                <!-- <div class="d-flex flex-column align-text-top mb-lg-4 mb-2">
+                    <div class="mb-2 _active">
+                        <a class="text-black text-decoration-none" href="/">Каталог автомобилей</a></div>
+                    <div class="mb-2 ">
+                        <a class="text-black text-decoration-none" href="/info-points">Пункты выдачи</a></div>
+                    <div class="mb-2 ">
+                        <a class="text-black text-decoration-none" href="/about">О нас</a></div>
+                </div> -->
+                <div class="d-flex flex-column align-text-top mb-lg-4 mb-2">
+                    <div class="mb-2 _active">
+                        <a class="text-black text-decoration-none" href="/">Каталог автомобилей</a></div>
+                    <div class="mb-2 ">
+                        <a class="text-black text-decoration-none" href="/info-points.html">Пункты выдачи</a></div>
+                    <div class="mb-2 ">
+                        <a class="text-black text-decoration-none" href="/about.html">О нас</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <div>
+                    <a class="text-no-decoration text-black fw-bold  text-decoration-none" href="mailto:support@support">
+                        <i class="fa-solid fa-envelope text-primary me-2" aria-hidden="true"></i>support@support</a></div>
+                <div class="mb-1 mb-md-2 mt-2">
+                    <div><i class="fa fa-map-marker text-primary me-2" aria-hidden="true"></i>
+                        <span class="fw-bold">Наши офисы</span></div>
+                </div>
+                <div class="ms-md-2 mt-2">г. Москва, Белокаменное шоссе, д. 20 офис 213</div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <div class="mt-md-0 mt-3 mb-2 mb-md-0">
+                    <a class="text-small" href="/policy.pdf" target="_blank">Политика обработки персональных данных</a></div>
+                <div class="mt-md-2 mb-3 mb-md-0">
+                    <a class="text-small" href="/contract.pdf" target="_blank">Публичная оферта</a></div>
+            </div>
+            <div class="col-12 col-lg-3 flex-column align-items-end justify-content-end">
+                <div class="d-none d-lg-block ">
+                    <div class="row justify-content-between mb-5">
+                        <div class="col"></div>
+                        <div class="col-auto logo">
+                            <a href="/"> <picture><source srcset="img/logo.webp"type="image/webp"><img src="img/logo.png" alt="Logo"></picture></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-secondary text-md-end text-start mt-3 mt-md-0 mb-3 mb-md-0">
+                    <div>Название сайта</div>
+                    <div>Номер сертификата регистрации юридического лица Нужны данные</div>
+                    <div class="mt-2"> @2023 Название сайта.
+                        Все права защищены </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="js/app.min.js"></script>
+
+    </div>
+</body>
+
+</html>

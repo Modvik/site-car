@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Главная</title>
+    <meta charset="UTF-8">
+    
+</head>
+
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="container">
+        <div class="header__top top-header">
+            <div class="top-header__container">
+                <div class="top-header__info">
+                    <a href="/" class="top-header__logo logo"><picture><source srcset="img/logo.webp"type="image/webp"><img src="img/logo.png" alt="Logo"></picture></a>
+                    <div class="top-header__links" data-da=".menu__body, 991.98,4">
+                        <div class="top-header__block">
+                            <small>Поддержка</small>
+                            <a href="tel:81234567890">8 (123) 456-78-90</a>
+                            <small>Звонок по России бесплатный</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom bottom-header">
+            <div class="bottom-header__container">
+                <div class="bottom-header__menu menu">
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <!-- <li class="menu__item ">
+                                <a class="menu__link" href="/">Каталог автомобилей</a></li>
+                            <li class="menu__item ">
+                                <a class="menu__link" href="/info-points">Пункты выдачи</a></li>
+                            <li class="menu__item ">
+                                <a class="menu__link" href="/about">О нас</a></li> -->
+                            <li class="menu__item ">
+                                <a class="menu__link" href="/">Каталог автомобилей</a></li>
+                            <li class="menu__item ">
+                                <a class="menu__link" href="/info-points.html">Пункты выдачи</a></li>
+                            <li class="menu__item ">
+                                <a class="menu__link" href="/about.html">О нас</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+            <main class="page ">
+                
+                <div class="container mt-5">
+                    <h1 class="text-center">Автомобили из Южной Кореи</h1>
+                </div>
+                <!-- filter -->
+                <div class="card my-5 container">
+                    <div class="card-body">
+                        <form id = "filter-form-index">
+                            <div class="row row-cols-1 row-cols-lg-3">
+                                <div>
+                                    <div class="mb-3 field-carssearch-brand">
+                                        <select id="carssearch-brand" class="form-select form-select-sm"name="brand">
+                                            <option value="">Марка</option>
+                                        </select>
+        
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="mb-3 field-carssearch-model">
+        
+                                        <select id="carssearch-model" class="form-select form-select-sm"
+                                            name="model" disabled>
+                                            <option value="">Модель</option>
+                                        </select>
+        
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="mb-3 field-carssearch-config">
+        
+                                        <select id="carssearch-config" class="form-select form-select-sm"
+                                            name="config" disabled>
+                                            <option value="">Конфигурация</option>
+                                        </select>
+        
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-cols-1 row-cols-lg-3">
+                                <div>
+                                    <div class="d-flex align-items-start">
+                                        <div class="w-50 pe-1">
+                                            <div class="mb-3 field-carssearch-pricefrom">
+        
+                                                <input type="number" id="carssearch-pricefrom"
+                                                    class="form-control form-control-sm" name="CarsSearch[priceFrom]"
+                                                    placeholder="Цена, ₽ от">
+        
+                                                <div class="invalid-feedback"></div>
+                                            </div>
+                                        </div>
+                                        <div class="w-50 ps-1">
+                                            <div class="mb-3 field-carssearch-priceto">
+        
+                                                <input type="number" id="carssearch-priceto" class="form-control form-control-sm"
+                                                    name="CarsSearch[priceTo]" placeholder="До">
+        
+                                                <div class="invalid-feedback"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-start">
+                                        <div class="w-50 pe-1">
+                                            <div class="mb-3 field-carssearch-yearfrom">
+        
+                                                <select id="carssearch-yearfrom" class="form-select form-select-sm"
+                                                    name="yearFrom">
+                                                    <option value="">Год от</option>
+                                                </select>
+        
+                                                <div class="invalid-feedback"></div>
+                                            </div>
+                                        </div>
+                                        <div class="w-50 ps-1">
+                                            <div class="mb-3 field-carssearch-yearto">
+        
+                                                <select id="carssearch-yearto" class="form-select form-select-sm"
+                                                    name="yearTo">
+                                                    <option value="">До</option>
+                                                </select>
+        
+                                                <div class="invalid-feedback"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-start">
+                                    <div class="w-50 pe-1">
+                                        <div class="mb-3 field-carssearch-transmission">
+        
+                                            <select id="carssearch-transmission" class="form-select form-select-sm"
+                                                name="transmission">
+                                                <option value="">Коробка передач</option>
+                                            </select>
+        
+                                            <div class="invalid-feedback"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-50 ps-1">
+                                        <div class="mb-3 field-carssearch-fuel">
+        
+                                            <select id="carssearch-fuel" class="form-select form-select-sm"
+                                                name="fuel">
+                                                <option value="">Топливо</option>
+                                            </select>
+        
+                                            <div class="invalid-feedback"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-cols-1 row-cols-lg-3">
+                                <div>
+                                    <div class="d-flex align-items-start">
+                                        <div class="w-50 pe-1">
+                                            <div class="mb-3 field-carssearch-mileagefrom">
+        
+                                                <input type="number" id="carssearch-mileagefrom"
+                                                    class="form-control form-control-sm" name="mileageFrom"
+                                                    placeholder="Пробег, км от">
+        
+                                                <div class="invalid-feedback"></div>
+                                            </div>
+                                        </div>
+                                        <div class="w-50 ps-1">
+                                            <div class="mb-3 field-carssearch-mileageto">
+        
+                                                <input type="number" id="carssearch-mileageto"
+                                                    class="form-control form-control-sm" name="mileageTo"
+                                                    placeholder="До">
+        
+                                                <div class="invalid-feedback"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input-group">
+                                        <div class="mb-3 field-carssearch-carid">
+        
+                                            <input type="number" id="carssearch-carid" class="form-control form-control-sm"
+                                                name="id" placeholder="Введите ID автомобиля">
+        
+                                            <div class="invalid-feedback"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="d-lg-flex justify-content-lg-between">
+                                <button type="submit" class="btn btn-primary col-12 col-lg-auto">Применить фильтр</button>
+                                <a class="btn btn-outline-secondary col-12 mt-2 mt-lg-0 col-lg-auto" href="/">Сбросить
+                                    фильтр</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- dinammic-cart-list -->
+                <div id="w1" class="list-view container">
+                    <div class="mb-1">
+                        <div id ="summary" class="summary"></div>
+                    </div>
+                    <div id="cars"class="row row-cols-1 g-3">
+                    </div>
+
+                    <!-- pagination -->
+                    <div class="mt-1">
+                        <ul id ="pagination" class="pagination mt-4">
+                        </ul>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer border-top">
+    <div class="container mt-3">
+        <div class="row justify-content-between">
+            <div class="d-lg-none mb-4 logo">
+                <a href="/"> <picture><source srcset="img/logo.webp"type="image/webp"><img src="img/logo.png" alt="Logo"></picture></a>
+            </div>
+            <div class="col-12 col-lg-3">
+                <!-- <div class="d-flex flex-column align-text-top mb-lg-4 mb-2">
+                    <div class="mb-2 _active">
+                        <a class="text-black text-decoration-none" href="/">Каталог автомобилей</a></div>
+                    <div class="mb-2 ">
+                        <a class="text-black text-decoration-none" href="/info-points">Пункты выдачи</a></div>
+                    <div class="mb-2 ">
+                        <a class="text-black text-decoration-none" href="/about">О нас</a></div>
+                </div> -->
+                <div class="d-flex flex-column align-text-top mb-lg-4 mb-2">
+                    <div class="mb-2 _active">
+                        <a class="text-black text-decoration-none" href="/">Каталог автомобилей</a></div>
+                    <div class="mb-2 ">
+                        <a class="text-black text-decoration-none" href="/info-points.html">Пункты выдачи</a></div>
+                    <div class="mb-2 ">
+                        <a class="text-black text-decoration-none" href="/about.html">О нас</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <div>
+                    <a class="text-no-decoration text-black fw-bold  text-decoration-none" href="mailto:support@support">
+                        <i class="fa-solid fa-envelope text-primary me-2" aria-hidden="true"></i>support@support</a></div>
+                <div class="mb-1 mb-md-2 mt-2">
+                    <div><i class="fa fa-map-marker text-primary me-2" aria-hidden="true"></i>
+                        <span class="fw-bold">Наши офисы</span></div>
+                </div>
+                <div class="ms-md-2 mt-2">г. Москва, Белокаменное шоссе, д. 20 офис 213</div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <div class="mt-md-0 mt-3 mb-2 mb-md-0">
+                    <a class="text-small" href="/policy.pdf" target="_blank">Политика обработки персональных данных</a></div>
+                <div class="mt-md-2 mb-3 mb-md-0">
+                    <a class="text-small" href="/contract.pdf" target="_blank">Публичная оферта</a></div>
+            </div>
+            <div class="col-12 col-lg-3 flex-column align-items-end justify-content-end">
+                <div class="d-none d-lg-block ">
+                    <div class="row justify-content-between mb-5">
+                        <div class="col"></div>
+                        <div class="col-auto logo">
+                            <a href="/"> <picture><source srcset="img/logo.webp"type="image/webp"><img src="img/logo.png" alt="Logo"></picture></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-secondary text-md-end text-start mt-3 mt-md-0 mb-3 mb-md-0">
+                    <div>Название сайта</div>
+                    <div>Номер сертификата регистрации юридического лица Нужны данные</div>
+                    <div class="mt-2"> @2023 Название сайта.
+                        Все права защищены </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="js/app.min.js"></script>
+
+        </div>
+    </body>
+
+</html>
