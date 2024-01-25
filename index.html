@@ -5,64 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Главная</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <title>Машины из южной кореи</title>
     <meta charset="UTF-8">
     
 </head>
 
-
     <body>
         <div class="wrapper">
-            <header class="header">
+            <div class="modal fade" id="phoneModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">Заказ обратного звонка</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id = "form-modal">
+                    <div>
+                        <div class="mb-3">
+                            <input type="text" id="name" class="form-control form-control-sm" name="name" placeholder="Ваше имя">
+                            <div class="invalid-feedback"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mb-3">
+                            <input type="" id="phone" class="tel form-control form-control-sm" name="phone" placeholder="Укажите телефон">
+                            <div class="invalid-feedback"></div>
+                        </div>
+                    </div>
+                    <div class="d-lg-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary col-12 col-lg-auto">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<header class="header">
     <div class="container">
         <div class="header__top top-header">
             <div class="top-header__container">
                 <div class="top-header__info">
-                    <a href="/" class="top-header__logo logo"><picture><source srcset="img/logo.webp"type="image/webp"><img src="img/logo.png" alt="Logo"></picture></a>
-                    <div class="top-header__links" data-da=".menu__body, 991.98,4">
+                    <a href="/" class="top-header__logo logo"><img src="img/logo.svg?version=1" alt="Logo"></a>
+                    <div class="top-header__links">
                         <div class="top-header__block">
-                            <small>Поддержка</small>
-                            <a href="tel:81234567890">8 (123) 456-78-90</a>
-                            <small>Звонок по России бесплатный</small>
+                            <div class="text-white">Город<br>Челябинск</div>
+                            <button type="button" class="btn btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#phoneModal"></i>Оставить заявку</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="header__bottom bottom-header">
-            <div class="bottom-header__container">
-                <div class="bottom-header__menu menu">
-                    <nav class="menu__body">
-                        <ul class="menu__list">
-                            <!-- <li class="menu__item ">
+        <div class="header__bottom bottom-header" data-spollers="768,max">
+            <div class="menu__icon" data-spoller="" tabindex="-1"><span></span><span></span><span></span></div>
+            <div class="header__menu menu">
+                <div class="bottom-header__container">
+                    <div class="bottom-header__menu menu">
+                        <nav class="menu__body">
+                            <div class="header__dinamic"></div>
+                            <ul class="menu__list">
+                                                                
+                                <li class="menu__item active">
                                 <a class="menu__link" href="/">Каталог автомобилей</a></li>
-                            <li class="menu__item ">
+                                <li class="menu__item ">
                                 <a class="menu__link" href="/info-points">Пункты выдачи</a></li>
-                            <li class="menu__item ">
-                                <a class="menu__link" href="/about">О нас</a></li> -->
-                            <li class="menu__item ">
-                                <a class="menu__link" href="/">Каталог автомобилей</a></li>
-                            <li class="menu__item ">
-                                <a class="menu__link" href="/info-points.html">Пункты выдачи</a></li>
-                            <li class="menu__item ">
-                                <a class="menu__link" href="/about.html">О нас</a></li>
-                        </ul>
-                    </nav>
+                                <li class="menu__item ">
+                                <a class="menu__link" href="https://www.tinkoff.ru/loans/auto-loan" target="_blank">Автокредит</a></li>
+                                <li class="menu__item ">
+                                <a class="menu__link" href="/about">О нас</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </header>
             <main class="page ">
-                
-                <div class="container mt-5">
-                    <h1 class="text-center">Автомобили из Южной Кореи</h1>
+                <div class="container">
+                    <div class="d-lg-flex justify-content-lg-evenly mt-5">
+                        <a href="/" class="active btn-castom btn btn-outline-secondary col-12 mt-2 mt-lg-0 col-lg-auto mt-2">Автомобили из Южной Кореи</a>
+                        <a href="/сhina" class="btn-castom btn btn-outline-secondary col-12 mt-2 mt-lg-0 col-lg-auto mt-2">Автомобили из Китая</a>
+                    </div>
                 </div>
                 <!-- filter -->
                 <div class="card my-5 container">
@@ -108,7 +135,7 @@
                                             <div class="mb-3 field-carssearch-pricefrom">
         
                                                 <input type="number" id="carssearch-pricefrom"
-                                                    class="form-control form-control-sm" name="CarsSearch[priceFrom]"
+                                                    class="form-control form-control-sm" name="priceFrom"
                                                     placeholder="Цена, ₽ от">
         
                                                 <div class="invalid-feedback"></div>
@@ -118,7 +145,7 @@
                                             <div class="mb-3 field-carssearch-priceto">
         
                                                 <input type="number" id="carssearch-priceto" class="form-control form-control-sm"
-                                                    name="CarsSearch[priceTo]" placeholder="До">
+                                                    name="priceTo" placeholder="До">
         
                                                 <div class="invalid-feedback"></div>
                                             </div>
@@ -229,12 +256,120 @@
                         <div id ="summary" class="summary"></div>
                     </div>
                     <div id="cars"class="row row-cols-1 g-3">
+                        <div data-key="1">
+                            <div class="card">
+                                <div class="card-body p-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-lg-4">
+                                            <div id="carouse1" class="carousel slide">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                            <picture><source srcset="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_001.webp?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"type="image/webp"><img class="d-block w-100 rounded img-fluid" src="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_001.jpg?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"></picture>
+                                                        </div>
+                                                    
+                                                        <div class="carousel-item">
+                                                            <picture><source srcset="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_002.webp?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"type="image/webp"><img class="d-block w-100 rounded img-fluid" src="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_002.jpg?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"></picture>
+                                                        </div>
+                                                    
+                                                        <div class="carousel-item">
+                                                            <picture><source srcset="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_003.webp?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"type="image/webp"><img class="d-block w-100 rounded img-fluid" src="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_003.jpg?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"></picture>
+                                                        </div>
+                                                    
+                                                        <div class="carousel-item">
+                                                            <picture><source srcset="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_004.webp?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"type="image/webp"><img class="d-block w-100 rounded img-fluid" src="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_004.jpg?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"></picture>
+                                                        </div>
+                                                    
+                                                        <div class="carousel-item">
+                                                            <picture><source srcset="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_005.webp?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"type="image/webp"><img class="d-block w-100 rounded img-fluid" src="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_005.jpg?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"></picture>
+                                                        </div>
+                                                    
+                                                        <div class="carousel-item">
+                                                            <picture><source srcset="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_006.webp?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"type="image/webp"><img class="d-block w-100 rounded img-fluid" src="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_006.jpg?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"></picture>
+                                                        </div>
+                                                    
+                                                        <div class="carousel-item">
+                                                            <picture><source srcset="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_007.webp?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"type="image/webp"><img class="d-block w-100 rounded img-fluid" src="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_007.jpg?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"></picture>
+                                                        </div>
+                                                    
+                                                        <div class="carousel-item">
+                                                            <picture><source srcset="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_008.webp?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"type="image/webp"><img class="d-block w-100 rounded img-fluid" src="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_008.jpg?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"></picture>
+                                                        </div>
+                                                    
+                                                        <div class="carousel-item">
+                                                            <picture><source srcset="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_009.webp?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"type="image/webp"><img class="d-block w-100 rounded img-fluid" src="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_009.jpg?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"></picture>
+                                                        </div>
+                                                    
+                                                        <div class="carousel-item">
+                                                            <picture><source srcset="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_010.webp?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"type="image/webp"><img class="d-block w-100 rounded img-fluid" src="http://ci.encar.com/carpicture/carpicture06/pic3666/36662111_010.jpg?impolicy=heightRate&amp;rh=653&amp;cw=1160&amp;ch=653&amp;cg=Center"></picture>
+                                                        </div>
+                                                    
+                                                </div>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouse1" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Предыдущий</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carouse1" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Предыдущий</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-8">
+                                            <a class="card__link" href="/car">
+                                                <div class="row justify-content-between mt-2 ms-1 ms-lg-0">
+                                                    <div class="col">
+                                                        <h3>Genesis G80 (RG3), 2020</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-0 mb-5 mt-lg-4 ms-1 ms-lg-0">
+                                                    <div class="col-12 col-lg-4">
+                                                        <div class="text-secondary mb-2">Цена автомобиля в Корее</div>
+                                                        <h5 class="price">3 059 071 ₽</h5>
+                                                        
+                                                        <div class="price_ru badge text-bg-success bg-opacity-25 text-dark me-2">Цена с ПТС в городе Владивосток - 6 164 433 ₽</div>
+                                                        
+                                                    </div>
+                                                    <div class="col-12 col-lg-3 d-flex flex-sm-row flex-lg-column  mt-lg-0 mt-3">
+                                                        <div class="text-secondary mb-lg-2 me-lg-0 me-2">Конфигурация</div>
+                                                        <div class="lead fs-6 fs-lg-4">Gasoline 3.5 Turbo AWD</div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-3 d-flex flex-sm-row flex-lg-column">
+                                                        <div class="text-secondary mb-lg-2 me-lg-0 me-2">Коробка передач</div>
+                                                        <div class="lead fs-6 fs-lg-4">АКПП</div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-2 d-flex flex-sm-row flex-lg-column">
+                                                        <div class="text-secondary mb-lg-2 me-lg-0 me-2">Тип топлива</div>
+                                                        <div class="lead fs-6 fs-lg-4">Бензин</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="row justify-content-lg-between mt-5 mb-2">
+                                                <div class="ms-2 ms-lg-0 col-12 col-lg-8">
+                                                    <div class="row align-items-center justify-content-between justify-content-lg-end">
+                                                        <div class="col-12 col-lg-5">
+                                                            <a class="mb-3 mb-lg-0 d-flex align-items-center" href="/scheme" target="_blank">Схема привоза авто</a>
+                                                        </div>
+                                                        <div class="bank mb-2 col-8 mt-lg-2">
+                                                            <a class="text-decoration-none text-black" href="https://www.tinkoff.ru/loans/auto-loan/?dco_ic=cfbf5b4c-3dd1-11ee-8000-0000f4e69843&amp;utm_term=tcpa&amp;utm_medium=agnt.utl&amp;utm_source=oooaytir_autoloan&amp;utm_campaign=loans.car_loan_677&amp;tcpa_click_id=224a24ce9ead11ee8c32ce6f94ea17c5f7819cb3f5694d5a965a5f4ee8351b31&amp;offer_id=677&amp;cookie_exp=336">
+                                                                <div class="fw-bold align-text-bottom">
+                                                                    <picture><source srcset="img/partners/tinkoff-logo.webp"type="image/webp"><img class="me-1 p-1" src="img/partners/tinkoff-logo.png"></picture>28 824 ₽/мес.
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- pagination -->
                     <div class="mt-1">
-                        <ul id ="pagination" class="pagination mt-4">
-                        </ul>
+                        <ul id="pagination" class="pagination mt-4">
+                        <li class="page-item prev disabled"><a class="page-link">«</a></li><li class="page-item active"><a class="page-link " href="/?page=1">1</a></li><li class="page-item"><a class="page-link " href="/?page=2">2</a></li><li class="page-item"><a class="page-link " href="/?page=3">3</a></li><li class="page-item"><a class="page-link " href="/?page=4">4</a></li><li class="page-item"><a class="page-link " href="/?page=5">5</a></li><li class="page-item"><a class="page-link " href="/?page=6">6</a></li><li class="page-item"><a class="page-link " href="/?page=7">7</a></li><li class="page-item"><a class="page-link " href="/?page=8">8</a></li><li class="page-item"><a class="page-link " href="/?page=9">9</a></li><li class="page-item"><a class="page-link " href="/?page=10">10</a></li><li class="page-item prev"><a class="page-link" href="/?page=2">»</a></li></ul>
                     </div>
                 </div>
             </main>
@@ -299,6 +434,7 @@
         </div>
     </div>
 </footer>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="js/app.min.js"></script>
 
